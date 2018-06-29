@@ -34,8 +34,6 @@ namespace SongLineBot.Controllers.Api
                 foreach (var e in ReceivedData.events)
                 {
                     var ReplyMessage = e.message.text;
-
-                    Utility.ReplyMessage(ReceivedData.events[0].replyToken, ReplyMessage, _LineChannelSecret);
                 }
                 //取得 http Post RawData(should be JSON)
                 string postData = Request.Content.ReadAsStringAsync().Result;
