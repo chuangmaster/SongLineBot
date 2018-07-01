@@ -8,6 +8,7 @@ namespace Bot.Common.Base.Enums
     /// </summary>
     public enum BotEventTypeEnum
     {
+        None = 0,
         [Description("text")]
         Text = 1,
         [Description("image")]
